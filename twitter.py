@@ -42,8 +42,8 @@ class RandomModule():
 
 class Twitter():
     def __init__(self):
-        auth = tweepy.OAuthHandler("YuzvvrQIgvosXVZ6jahFuTMO6", "IZbVE0LWVq9s0YoQkUpE8v35c0AiYSKCZrlaqJtLp6HR04WqOy")
-        auth.set_access_token("1419262253065461763-aYVqg6bMSgc75gcWTCcHdYZ3MWCvR3", "CnikegAGLSZojqzfOeKGVA0tNisOwmAE90kudSnVpWdar")
+        auth = tweepy.OAuthHandler("consumer_key", "consumer_secret")
+        auth.set_access_token("access_token", "access_token_secret")
         self.api = tweepy.API(auth)
         
     def tweet(self, message, media_ids):
